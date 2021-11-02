@@ -99,7 +99,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uc-Y8-iMP">
-                                                    <rect key="frame" x="43" y="11" width="253" height="42"/>
+                                                    <rect key="frame" x="43" y="11" width="261" height="53"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWE-XT-DIp">
+                                                    <rect key="frame" x="312" y="21" width="95" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -108,6 +115,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="taim" destination="uWE-XT-DIp" id="Erq-cT-VUf"/>
                                             <outlet property="todolebal" destination="8Uc-Y8-iMP" id="9CB-LM-PHS"/>
                                         </connections>
                                     </tableViewCell>
@@ -151,6 +159,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1340.5797101449277" y="446.65178571428567"/>
+        </scene>
+        <!--Updat View Controller-->
+        <scene sceneID="k9s-bL-Ca6">
+            <objects>
+                <viewController id="A5I-Vj-cMn" customClass="updatViewController" customModule="to_do_list" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x1X-1G-TCK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-Nv-2PO">
+                                <rect key="frame" x="30" y="327" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNn-tW-pZd">
+                                <rect key="frame" x="50" y="455" width="314" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="update"/>
+                                <connections>
+                                    <action selector="update:" destination="A5I-Vj-cMn" eventType="touchUpInside" id="TmP-dG-UHm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="isZ-dS-esn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YNn-tW-pZd" firstAttribute="top" secondItem="gmu-Nv-2PO" secondAttribute="bottom" constant="94" id="8nQ-WX-Nwu"/>
+                            <constraint firstItem="isZ-dS-esn" firstAttribute="trailing" secondItem="YNn-tW-pZd" secondAttribute="trailing" constant="50" id="JSR-XW-UKY"/>
+                            <constraint firstItem="gmu-Nv-2PO" firstAttribute="leading" secondItem="isZ-dS-esn" secondAttribute="leading" constant="30" id="kVc-Kl-Kem"/>
+                            <constraint firstItem="YNn-tW-pZd" firstAttribute="leading" secondItem="isZ-dS-esn" secondAttribute="leading" constant="50" id="odl-hJ-u6N"/>
+                            <constraint firstItem="isZ-dS-esn" firstAttribute="trailing" secondItem="gmu-Nv-2PO" secondAttribute="trailing" constant="30" id="sXR-52-V9i"/>
+                            <constraint firstItem="gmu-Nv-2PO" firstAttribute="top" secondItem="isZ-dS-esn" secondAttribute="top" constant="283" id="uk1-l6-VA3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="updateTixtField" destination="gmu-Nv-2PO" id="9Os-VS-duv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LvN-Vq-tOX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2269.5652173913045" y="440.625"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GZr-Uh-Gjd">

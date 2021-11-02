@@ -15,7 +15,7 @@
 		04518E28272FC8B400840E3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04518E26272FC8B400840E3F /* LaunchScreen.storyboard */; };
 		04518E31272FD08600840E3F /* listTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04518E2F272FD08600840E3F /* listTableViewCell.swift */; };
 		04518E32272FD08600840E3F /* listTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04518E30272FD08600840E3F /* listTableViewCell.xib */; };
-		04518E3427312D1400840E3F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04518E3327312D1400840E3F /* Data.swift */; };
+		04518E36273147BA00840E3F /* updatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04518E35273147BA00840E3F /* updatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		04518E29272FC8B400840E3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04518E2F272FD08600840E3F /* listTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listTableViewCell.swift; sourceTree = "<group>"; };
 		04518E30272FD08600840E3F /* listTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = listTableViewCell.xib; sourceTree = "<group>"; };
-		04518E3327312D1400840E3F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		04518E35273147BA00840E3F /* updatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +65,9 @@
 				04518E1B272FC8B200840E3F /* AppDelegate.swift */,
 				04518E1D272FC8B200840E3F /* SceneDelegate.swift */,
 				04518E1F272FC8B200840E3F /* ViewController.swift */,
-				04518E3327312D1400840E3F /* Data.swift */,
 				04518E2F272FD08600840E3F /* listTableViewCell.swift */,
 				04518E30272FD08600840E3F /* listTableViewCell.xib */,
+				04518E35273147BA00840E3F /* updatViewController.swift */,
 				04518E21272FC8B200840E3F /* Main.storyboard */,
 				04518E24272FC8B400840E3F /* Assets.xcassets */,
 				04518E26272FC8B400840E3F /* LaunchScreen.storyboard */,
@@ -149,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04518E20272FC8B200840E3F /* ViewController.swift in Sources */,
-				04518E3427312D1400840E3F /* Data.swift in Sources */,
+				04518E36273147BA00840E3F /* updatViewController.swift in Sources */,
 				04518E31272FD08600840E3F /* listTableViewCell.swift in Sources */,
 				04518E1C272FC8B200840E3F /* AppDelegate.swift in Sources */,
 				04518E1E272FC8B200840E3F /* SceneDelegate.swift in Sources */,

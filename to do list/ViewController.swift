@@ -43,6 +43,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")as!listTableViewCell
+        
         cell.todolebal?.text = OurList[indexPath.row]
         return cell
     }
