@@ -8,30 +8,33 @@
 import UIKit
 
 
-var OurList:[String] = []
+
 class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource {
-    
+    var OurList:[String] = []
     
     @IBOutlet weak var todotextFild: UITextField!
     @IBOutlet weak var ourtableview: UITableView!
+   
+    @IBOutlet weak var day: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //Do any additional setup after loading the view.
+        todotextFild.text = UserDefaults.standard.string(forKey: "Item")
     }
     
     
     @IBAction func add(_ sender: Any){
         OurList.append(todotextFild.text!)
         ourtableview.reloadData()
-        UserDefaults.standard.set(OurList, forKey: "Item")
+        UserDefaults.standard.set(todotextFild.text, forKey: "Item")
         
     }
     
     @IBAction func deleteAll(_ sender: Any) {
         OurList.removeAll()
         ourtableview.reloadData()
-        UserDefaults.standard.set(OurList, forKey: "Item")
+       
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
