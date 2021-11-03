@@ -9,13 +9,18 @@ import UIKit
 
 class List {
     var items: [String] = []
+    var stutesTask = 0
 }
 class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource {
     var OurList = List()
+    
+   
+    
     var selectedCellIndex : Int!
     @IBOutlet weak var todotextFild: UITextField!
     @IBOutlet weak var ourtableview: UITableView!
-   
+    @IBOutlet weak var segment: UISegmentedControl!
+    
     override func viewWillAppear(_ animated: Bool) {
         ourtableview.reloadData()
     }
@@ -31,6 +36,12 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     @IBAction func add(_ sender: Any){
         OurList.items.append(todotextFild.text!)
         ourtableview.reloadData()
+        if todotextFild.text != "" {
+            //delegate?.
+            
+            
+        }
+        
 //        UserDefaults.standard.set(OurList, forKey: "Item")
         
         // Save array to userdefaults
@@ -52,6 +63,11 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! listTableViewCell
         
         cell.todolebal?.text = OurList.items[indexPath.row]
+        
+      
+
+        
+        
         return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
