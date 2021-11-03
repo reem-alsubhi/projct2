@@ -70,15 +70,6 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="74N-1H-MeC"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yev-wt-DUL">
-                                <rect key="frame" x="58" y="187" width="290" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91485852003097534" green="0.83544737100601196" blue="0.52813798189163208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <segments>
-                                    <segment title="Urgent"/>
-                                    <segment title="not urgent"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -101,7 +92,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ourtableview" destination="b3O-Jr-oAQ" id="jkT-Ua-d5E"/>
-                        <outlet property="segment" destination="Yev-wt-DUL" id="VEx-Kg-YxQ"/>
                         <outlet property="todotextFild" destination="9vB-yh-ulg" id="gUU-Tc-8LI"/>
                         <segue destination="A5I-Vj-cMn" kind="show" identifier="editSegue" id="GCs-bQ-7r1"/>
                     </connections>
